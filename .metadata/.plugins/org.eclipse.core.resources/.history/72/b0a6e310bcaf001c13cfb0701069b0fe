@@ -1,0 +1,9 @@
+package br.com.projetosaula.primeiroprojetospring.entity;
+
+public class Filme {
+
+	public Filme() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

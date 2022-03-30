@@ -1,0 +1,9 @@
+package br.com.projetosaula.primeiroprojetospring.controller;
+
+public class FilmeController {
+
+	public FilmeController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

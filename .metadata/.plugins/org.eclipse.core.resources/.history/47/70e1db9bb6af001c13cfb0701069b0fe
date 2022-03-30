@@ -1,0 +1,9 @@
+package br.com.projetosaula.primeiroprojetospring.controller;
+
+public class HomeController {
+
+	public HomeController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

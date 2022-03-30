@@ -1,0 +1,1 @@
+INSERT INTO filme(titulo,genero,restricao,favorito) values ('FILME UM','FICAO',12,1);

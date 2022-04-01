@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,13 +32,29 @@ public class FilmeController {
 		
 	}
 
-	@GetMapping("/{titulo}")
-	public Filme  getFilmeByTitulo(@PathVariable("titulo") String titulo){
+	@GetMapping("/{id}")
+	public Filme getFilmeById(@PathVariable("id") Long id) throws Exception{
 		
-		return filmeRepository.findByTitulo(titulo);
+		Filme filme= filmeRepository.findById(id)
+					.orElseThrow(() -> new Exception("Filme não encontrado com o id="+id));
+		return filme;				
+	}
+	
+	@PostMapping
+	public boolean saveFilme(@RequestBody Filme filme) throws Exception{
 		
+		if (filme == null) {
+			return false;
+		}
 		
+		filmeRepository.save(filme);
+		return true;
 	}
 	
 	
-}
+	}
+
+
+
+
+

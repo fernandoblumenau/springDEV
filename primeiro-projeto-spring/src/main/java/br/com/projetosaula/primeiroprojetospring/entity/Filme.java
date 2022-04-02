@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity()
 public class Filme {
@@ -12,13 +13,16 @@ public class Filme {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String titulo;
-	private String genero;
-	private int restricao;
+	
+	@ManyToOne
+	private Genero genero;
+	
+	@ManyToOne
+	private Restricao restricao;
 	private int favorito;
 
 	public Filme() {
 		
-	
 	}
 
 	public Long getId() {
@@ -37,19 +41,19 @@ public class Filme {
 		this.titulo = titulo;
 	}
 
-	public String getGenero() {
+	public Genero getGenero() {
 		return genero;
 	}
 
-	public void setGenero(String genero) {
+	public void setGenero(Genero genero) {
 		this.genero = genero;
 	}
 
-	public int getRestricao() {
+	public Restricao getRestricao() {
 		return restricao;
 	}
 
-	public void setRestricao(int restricao) {
+	public void setRestricao(Restricao restricao) {
 		this.restricao = restricao;
 	}
 

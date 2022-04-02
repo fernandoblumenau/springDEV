@@ -6,6 +6,6 @@ import br.com.projetosaula.primeiroprojetospring.entity.Filme;
 
 public interface FilmeRepository extends JpaRepository<Filme, Long>{
 	
-	public Filme findByTitulo(String titulo);
+	public Filme findByGenero(String genero);
 
 }

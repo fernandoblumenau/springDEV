@@ -1,0 +1,7 @@
+INSERT INTO GENERO(descricao) VALUES ('Aventura');
+INSERT INTO GENERO(descricao) VALUES ('Fantasia');
+INSERT INTO GENERO(descricao) VALUES ('Ficção');
+INSERT INTO GENERO(descricao) VALUES ('Drama');
+INSERT INTO GENERO(descricao) VALUES ('Ação');
+
+

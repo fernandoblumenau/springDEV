@@ -3,12 +3,16 @@ package br.com.projetosaula.primeiroprojetospring.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.projetosaula.primeiroprojetospring.entity.Filme;
@@ -41,20 +45,50 @@ public class FilmeController {
 	}
 	
 	@PostMapping
+	@ResponseStatus(code = HttpStatus.CREATED)
 	public boolean saveFilme(@RequestBody Filme filme) throws Exception{
 		
 		if (filme == null) {
-			return false;
+			throw new Exception("Dados não enviados");
 		}
 		
 		filmeRepository.save(filme);
 		return true;
 	}
 	
+	@GetMapping("/genero/{genero}")
+	public Filme getFilmeByGenero(@PathVariable("genero") String genero) {
+		
+		Filme filme = filmeRepository.findByGenero(genero);
+		
+		return filme;
+	}
 	
+	
+	@PutMapping
+	@ResponseStatus(code = HttpStatus.OK)
+	public boolean editFilme(@RequestBody Filme filme) throws Exception{
+		
+		if (filme.getId() == null) {
+			throw new Exception("Registro sem Id.");
+		}
+		filmeRepository.findById(filme.getId()).orElseThrow(()-> new Exception("Regisro não encontrado"));
+		
+		filmeRepository.save(filme);
+		return true;	
 	}
 
-
+	@DeleteMapping
+	@ResponseStatus(code = HttpStatus.OK)
+	public boolean deleteFilme(@RequestBody Long id) throws Exception{
+		filmeRepository.findById(id).orElseThrow(
+				()-> new Exception("Regisro não encontrado"));
+		
+		filmeRepository.deleteById(id);		
+		return true;		
+	}
+		
+}
 
 
 

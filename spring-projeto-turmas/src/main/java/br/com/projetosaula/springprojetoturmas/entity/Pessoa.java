@@ -20,8 +20,7 @@ public class Pessoa {
 	
 	public Pessoa() {}
 
-
-
+	
 	public long getId() {
 		return id;
 	}

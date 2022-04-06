@@ -19,10 +19,13 @@ public class Turma {
 	private String nome;
 	private String periodo;
 	private int maxAlunos;
-	@OneToMany
-	@JoinColumn(name="id_turma")
+	
+	@OneToMany (mappedBy = "turma")
 	private List<Aluno> alunos;
+	
+	
 	@OneToOne
+	@JoinColumn(name="professor_id")
 	private Professor professor;
 	
 	public Turma() {}

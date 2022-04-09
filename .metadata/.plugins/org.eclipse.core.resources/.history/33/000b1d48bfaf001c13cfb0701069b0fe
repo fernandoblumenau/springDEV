@@ -1,5 +1,0 @@
-package br.com.projetosaula.primeiroprojetospring.repository;
-
-public interface FilmeRepository {
-
-}

@@ -1,9 +1,0 @@
-package br.com.projetosaula.primeiroprojetospring.entity;
-
-public class Genero {
-
-	public Genero() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

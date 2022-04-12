@@ -18,7 +18,7 @@ public class Aluno {
 	private int ano;
 	
 	@OneToOne
-	@JoinColumn(name="turma_id")
+	@JoinColumn(name="turma_id", nullable =true)
 	private Turma turma;
 	
 	@OneToOne

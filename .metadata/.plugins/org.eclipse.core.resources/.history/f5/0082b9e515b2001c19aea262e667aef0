@@ -1,9 +1,0 @@
-package br.com.projetosaula.primeiroprojetospring.entity;
-
-public class Restricao {
-
-	public Restricao() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

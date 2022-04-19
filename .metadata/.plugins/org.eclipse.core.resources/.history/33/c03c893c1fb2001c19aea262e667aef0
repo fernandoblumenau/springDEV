@@ -1,9 +1,0 @@
-
-
-INSERT INTO RESTRICAO(descricao, idade) VALUES ('Livre', 0);
-INSERT INTO RESTRICAO(descricao, idade) VALUES ('10 Anos', 10);
-INSERT INTO RESTRICAO(descricao, idade) VALUES ('12 Anos', 12);
-INSERT INTO RESTRICAO(descricao, idade) VALUES ('14 Anos', 14);
-INSERT INTO RESTRICAO(descricao, idade) VALUES ('16 Anos', 16);
-INSERT INTO RESTRICAO(descricao, idade) VALUES ('18 Anos', 18);
-

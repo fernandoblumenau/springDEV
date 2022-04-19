@@ -2779,3 +2779,18 @@ org.eclipse.core.runtime.CoreException: Launch configuration SpringProjetoTurmas
 2022-04-14 18:30:16,002 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-04-14 18:30:16,002 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-04-14 18:30:16,003 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory P:\DEVS2BLU\Alunos NãoExcluir\Fernando\spring-projeto-turmas\src\test\resources
+2022-04-18 18:27:53,750 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-04-18 21:43:33,921 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-18 21:43:34,053 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-18 21:43:34,057 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-18 21:43:34,120 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-18 21:43:34,141 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-18 21:43:34,143 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-18 21:43:34,143 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory P:\DEVS2BLU\Alunos NãoExcluir\Fernando\spring-projeto-turmas\src\test\resources
+2022-04-18 21:53:18,094 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-18 21:53:18,095 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-18 21:53:18,131 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-18 21:53:18,191 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-04-18 21:53:18,202 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-18 21:53:18,202 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-18 21:53:18,202 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory P:\DEVS2BLU\Alunos NãoExcluir\Fernando\spring-projeto-turmas\src\test\resources

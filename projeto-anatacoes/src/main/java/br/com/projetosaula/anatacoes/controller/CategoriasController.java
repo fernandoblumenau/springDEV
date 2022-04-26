@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -42,4 +43,18 @@ public class CategoriasController {
 		return new ResponseEntity<CategoriaDTO>(service.save(categoria),HttpStatus.CREATED);
 		
 	}
+	
+	@DeleteMapping("/{id}")
+	public boolean delete(@PathVariable Integer IdCategoria) {
+		return service.delete(IdCategoria);
+		
+	}
+	
+	@PostMapping("/toggleAtivo")
+	public boolean toggleAtivo(@RequestBody Integer idCategoria) {
+		return service.toggle(idCategoria);
+		
+	}
+	
+	
 }

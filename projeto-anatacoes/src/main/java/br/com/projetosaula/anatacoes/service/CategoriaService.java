@@ -37,4 +37,14 @@ public class CategoriaService {
 		return categoria.getDTO();
 	}
 
+	public boolean delete(Integer idCategoria) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean toggle(Integer idCategoria) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

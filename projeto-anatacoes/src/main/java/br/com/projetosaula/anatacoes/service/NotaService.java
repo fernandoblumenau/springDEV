@@ -33,5 +33,10 @@ public class NotaService {
 		
 		return nota.getDTO();
 	}
+
+	public NotaDTO add(NotaDTO nota) {
+		// TODO Auto-generated method stub
+		return repository.save(nota.convertToEntity()).getDTO();
+	}
 	
 }

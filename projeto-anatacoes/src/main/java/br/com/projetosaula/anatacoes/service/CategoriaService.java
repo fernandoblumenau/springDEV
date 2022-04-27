@@ -37,14 +37,22 @@ public class CategoriaService {
 		return categoria.getDTO();
 	}
 
-	public boolean delete(Integer idCategoria) {
-		// TODO Auto-generated method stub
-		return false;
+	public Boolean delete(Integer idCategoria) throws Exception {
+		Categoria cat = repository.findById(idCategoria)
+				.orElseThrow(
+						()-> new Exception("Categoria não encontrada") );
+			repository.delete(cat);
+		return true;
 	}
 
-	public boolean toggle(Integer idCategoria) {
-		// TODO Auto-generated method stub
-		return false;
+	public Boolean toggle(Integer idCategoria)  throws Exception{
+		Categoria cat = repository.findById(idCategoria)
+				.orElseThrow(
+						()-> new Exception("Categoria não encontrada") );
+		
+		cat.setFlAtivo(!cat.isFlAtivo());
+		return save(cat.getDTO()).getIdCategoria()>0;
+
 	}
 
 }

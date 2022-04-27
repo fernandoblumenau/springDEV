@@ -25,7 +25,7 @@ public class CategoriaDTO implements Serializable{
 
 	
 	public Categoria convertDtoToEntiy() {
-	return new Categoria(	getIdCategoria(),
+	return new Categoria(getIdCategoria(),
 										getDescricaoCategoria(),
 										isFlAtivo());
 										

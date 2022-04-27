@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="br.com.projetosaula.springprojetoturmas.repository.PessoaRepository"/>
     <fullyQualifiedTypeName name="net.bytebuddy.implementation.bytecode.assign.Assigner.EqualTypesOnly"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseStatus"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.springprojetoturmas.entity.Pessoa"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.springprojetoturmas.repository.AlunoRepository"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.springprojetoturmas.entity.Aluno"/>
@@ -34,9 +33,7 @@
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.repository.NotasRepository"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.data.entity.Nota"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.service.NotaService"/>
-    <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.data.dto.NotaDTO"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -47,13 +44,17 @@
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.service.CategoriaService"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.data.dto.CategoriaDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.connector.Response"/>
+    <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.data.dto.NotaDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 </qualifiedTypeNameHistroy>

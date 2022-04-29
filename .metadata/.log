@@ -3408,3 +3408,131 @@ java.util.concurrent.TimeoutException
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-26 22:02:50.103
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yPOGQGOF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-26 22:02:50.103
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.yPOGQGOF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-26 22:02:50.104
+!MESSAGE subsribers = {sts4.classpath.vAehWQmv=Send Classpath Notifications(114)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-26 22:02:50.104
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yPOGQGOF => OK
+
+!ENTRY org.eclipse.ui 2 2 2022-04-26 22:02:51.345
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-04-28 18:25:26.000 -----------------------------------------------
+eclipse.buildId=4.14.0.202203131612
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-04-28 18:25:51.797
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-28 18:25:51.797
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2d23a5be,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@51aa2a58,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-28 18:25:51.797
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@726d8fa0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56554365,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:05.471
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:05.471
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2c1283bc[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:05.502
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:05.950
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-28 18:26:09.478
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'P:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.011
+!MESSAGE Boot LS startup time from start to initialized: 19484ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.228
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TvfFQELVisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.242
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.256
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.257
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.257
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TvfFQELV => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.260
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.425
+!MESSAGE classpath=91 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.428
+!MESSAGE buffering callback sts4.classpath.TvfFQELV projeto-anatacoes false 91
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:25.429
+!MESSAGE executing callback sts4.classpath.TvfFQELV 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 18:26:27.129
+!MESSAGE executing callback sts4.classpath.TvfFQELV SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 21:56:39.562
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TvfFQELV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 21:56:39.717
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.TvfFQELV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 21:56:39.717
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 21:56:39.718
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TvfFQELV => OK
+
+!ENTRY org.eclipse.ui 2 2 2022-04-28 21:56:48.046
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

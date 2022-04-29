@@ -1,0 +1,13 @@
+<div id="quadro" class="d-flex justify-content-between bg-quadro p-5">
+  <div class="row">
+    <div *ngFor="let nota of listaNotas$ | async " class="card bg-nota" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"> {{nota.tituloNota}} </h5>
+        <h6 class="card-subtitle mb-2 text-muted"> {{nota.categoria.descricaoCategoria}} </h6>
+        <p class="card-text"> {{nota.textoAnotacao}} </p>
+        <button (click)="update(nota.idNota)" class="btn btn-sm btn-success">Update</button>
+        <button (click)="delete(nota.idNota)" class="btn btn-sm btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

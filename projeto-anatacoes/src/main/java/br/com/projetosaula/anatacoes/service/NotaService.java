@@ -38,5 +38,11 @@ public class NotaService {
 		// TODO Auto-generated method stub
 		return repository.save(nota.convertToEntity()).getDTO();
 	}
+
+	
+	public Boolean delete(Integer id)  throws Exception{
+		repository.delete(getById(id).convertToEntity());
+		return true;
+	}
 	
 }

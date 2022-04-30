@@ -53,8 +53,7 @@ public class CategoriasController {
 	
 	@PutMapping("/toggleAtivo")
 	public ResponseEntity<Boolean> toggleAtivo(@RequestBody Integer idCategoria) throws Exception{
-		return new ResponseEntity<>(service.toggle(idCategoria),HttpStatus.OK);
-		
+		return new ResponseEntity<>(service.toggle(idCategoria),HttpStatus.OK);		
 	}
 	
 	

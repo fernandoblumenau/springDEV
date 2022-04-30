@@ -19,7 +19,7 @@ public class NotaDTO implements Serializable{
 
 	private Integer idNota;
 	private String tituloNota;
-	private String textoanotacao;
+	private String textoAnotacao;
 	private CategoriaDTO categoria;
 	
 	
@@ -28,11 +28,11 @@ public class NotaDTO implements Serializable{
 	}
 
 
-	public NotaDTO(Integer idNota, String tituloNota, String textoanotacao, CategoriaDTO categoria) {
+	public NotaDTO(Integer idNota, String tituloNota, String textoAnotacao, CategoriaDTO categoria) {
 		super();
 		this.idNota = idNota;
 		this.tituloNota = tituloNota;
-		this.textoanotacao = textoanotacao;
+		this.textoAnotacao = textoAnotacao;
 		this.categoria = categoria;
 	}
 
@@ -40,7 +40,7 @@ public class NotaDTO implements Serializable{
 	public Nota convertToEntity() {
 		return new Nota(getIdNota(),
 				getTituloNota(),
-				getTextoanotacao(),
+				getTextoAnotacao(),
 				getCategoria().convertDtoToEntiy());
 	}
 	
@@ -66,13 +66,13 @@ public class NotaDTO implements Serializable{
 	}
 
 
-	public String getTextoanotacao() {
-		return textoanotacao;
+	public String getTextoAnotacao() {
+		return textoAnotacao;
 	}
 
 
-	public void setTextoanotacao(String textoanotacao) {
-		this.textoanotacao = textoanotacao;
+	public void setTextoanotacao(String textoAnotacao) {
+		this.textoAnotacao = textoAnotacao;
 	}
 
 

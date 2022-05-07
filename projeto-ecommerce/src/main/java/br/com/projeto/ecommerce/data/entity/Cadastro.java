@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.lang.NonNull;
+
 import br.com.projeto.ecommerce.data.dto.CadastroDTO;
 import br.com.projeto.ecommerce.data.dto.ProdutoDTO;
 
@@ -14,26 +16,31 @@ public class Cadastro {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	private String nome;
 	private String telefone;
-	private String CEP;
+	private String cep;
 	private String rua;
 	private Integer numero;
 	private String bairro;
 	private String estado;
+	private String cidade;
 	
 	public Cadastro() {
 		super();
 	}
 
-	public Cadastro(Integer id, String telefone, String cEP, String rua, Integer numero, String bairro, String estado) {
+	public Cadastro(Integer id, String nome, String telefone, String cep, String rua, Integer numero, String bairro,
+			String estado, String cidade) {
 		super();
 		this.id = id;
+		this.nome = nome;
 		this.telefone = telefone;
-		CEP = cEP;
+		this.cep = cep;
 		this.rua = rua;
 		this.numero = numero;
 		this.bairro = bairro;
 		this.estado = estado;
+		this.cidade = cidade;
 	}
 
 	public Integer getId() {
@@ -44,6 +51,14 @@ public class Cadastro {
 		this.id = id;
 	}
 
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
 	public String getTelefone() {
 		return telefone;
 	}
@@ -52,12 +67,12 @@ public class Cadastro {
 		this.telefone = telefone;
 	}
 
-	public String getCEP() {
-		return CEP;
+	public String getCep() {
+		return cep;
 	}
 
-	public void setCEP(String cEP) {
-		CEP = cEP;
+	public void setCep(String cep) {
+		this.cep = cep;
 	}
 
 	public String getRua() {
@@ -92,9 +107,17 @@ public class Cadastro {
 		this.estado = estado;
 	}
 
+	public String getCidade() {
+		return cidade;
+	}
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+
 	public CadastroDTO getDTO() {
 		// TODO Auto-generated method stub
-		return new CadastroDTO(getId(), getTelefone(), getCEP(), getRua(),getNumero(), getBairro(),getEstado());
+		return new CadastroDTO(getId(), getNome(), getTelefone(), getCep(),getRua(), getNumero(),getBairro(),getEstado(), getCidade());
 	
 	}
 	

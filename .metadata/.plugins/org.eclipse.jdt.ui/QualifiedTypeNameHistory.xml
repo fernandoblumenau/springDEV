@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Long"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.primeiroprojetospring.repository.FilmeRepository"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.primeiroprojetospring.entity.Filme"/>
     <fullyQualifiedTypeName name="org.hibernate.jdbc.Expectation"/>
@@ -17,17 +16,13 @@
     <fullyQualifiedTypeName name="br.com.projetosaula.springprojetoturmas.entity.Aluno"/>
     <fullyQualifiedTypeName name="org.springframework.lang.Nullable"/>
     <fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="javax.persistence.Column"/>
     <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
     <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
-    <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.repository.NotasRepository"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.data.entity.Nota"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.service.NotaService"/>
@@ -38,17 +33,14 @@
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.repository.CategoriaRepository"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.data.entity.Categoria"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.data.dto.CategoriaDTO"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.apache.catalina.connector.Response"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.service.CategoriaService"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
-    <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
@@ -57,4 +49,15 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="br.com.projetosaula.anatacoes.data.dto.NotaDTO"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="br.com.projeto.ecommerce.repository.ProdutoRepository"/>
+    <fullyQualifiedTypeName name="br.com.projeto.ecommerce.service.ProdutoService"/>
+    <fullyQualifiedTypeName name="br.com.projeto.ecommerce.data.entity.Produto"/>
+    <fullyQualifiedTypeName name="br.com.projeto.ecommerce.data.dto.ProdutoDTO"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
 </qualifiedTypeNameHistroy>

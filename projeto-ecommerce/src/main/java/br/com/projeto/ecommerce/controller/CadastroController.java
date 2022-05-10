@@ -19,7 +19,7 @@ import br.com.projeto.ecommerce.service.CadastroService;
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/api/cadastros")
-public class cadastroController {
+public class CadastroController {
 
 	
 

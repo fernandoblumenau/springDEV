@@ -11,6 +11,7 @@ import br.com.projeto.ecommerce.data.entity.Produto;
 import br.com.projeto.ecommerce.repository.ProdutoRepository;
 
 
+
 @Service
 public class ProdutoService {
 	
@@ -27,5 +28,13 @@ public class ProdutoService {
 		}
 		return listDTOs;
 	}
+	
+	public ProdutoDTO getById(Integer id) throws Exception{
+		Produto produto = repository.findById(id)
+					.orElseThrow(
+							()-> new Exception("Categoria não encontrada") );
+		return produto.getDTO();
+	}
+	
 
 }

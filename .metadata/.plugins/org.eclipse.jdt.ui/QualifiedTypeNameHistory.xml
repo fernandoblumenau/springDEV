@@ -55,9 +55,9 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="br.com.projeto.ecommerce.repository.ProdutoRepository"/>
     <fullyQualifiedTypeName name="br.com.projeto.ecommerce.service.ProdutoService"/>
-    <fullyQualifiedTypeName name="br.com.projeto.ecommerce.data.entity.Produto"/>
-    <fullyQualifiedTypeName name="br.com.projeto.ecommerce.data.dto.ProdutoDTO"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Column"/>
     <fullyQualifiedTypeName name="org.springframework.lang.NonNull"/>
+    <fullyQualifiedTypeName name="br.com.projeto.ecommerce.data.entity.Produto"/>
+    <fullyQualifiedTypeName name="br.com.projeto.ecommerce.data.dto.ProdutoDTO"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,23 @@
+
+
+FROM openjdk
+RUN mkdir app
+ADD /target/projeto-ecommerce-0.0.1-SNAPSHOT.jar /app/projeto-ecommerce.jar
+WORKDIR /app
+ENTRYPOINT ["java", "-jar", "projeto-ecommerce.jar"]
+
+docker run -p 8080:8081 e-comerce:latest
+
+docker images
+
+docker build -t e-commerce .
+
+para baixar mysql: docker pull mysql
+
+docker run -e MYSQL_ROOT_PASSWORD=admin --name base-mysql -d mysql:latest
+
+)
+
+docker run --name=base-mysql -p3306:3306 -e MYSQL_ROOT_PASSWORD=admin -d mysql:latest
+
+docker exec -it base-mysql bash

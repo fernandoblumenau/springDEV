@@ -38,24 +38,24 @@ services:
     networks:
       - devs2blu-network
 
-  frontend-projeto-ecommerce:
-    image: atbatw146/frontend-projeto-ecommerce
-    expose:
-      - 4200
-    ports:
-      - 4200:4200
-    restart: on-failure
-    volumes:
-      - ./projeto-ecommerce:/projeto-front-ecommerce
-    build: ./projeto-front-ecommerce
-    working_dir: /projeto-front-ecommerce
-    command: "npm install && npm install -g @angular/cli@13.2.5 && ng serve --open --host 0.0.0.0 --port 4200 --disable-host-check"
-    links:
-      - backend-projeto-ecommerce
-    depends_on:
-      - backend-projeto-ecommerce
-    networks:
-      - devs2blu-network
+  # frontend-projeto-ecommerce:
+  #   image: atbatw146/frontend-projeto-ecommerce
+  #   expose:
+  #     - 4200
+  #   ports:
+  #     - 4200:4200
+  #   restart: on-failure
+  #   volumes:
+  #     - ./projeto-ecommerce:/projeto-front-ecommerce
+  #   build: ./projeto-front-ecommerce
+  #   working_dir: /projeto-front-ecommerce
+  #   command: "npm install && npm install -g @angular/cli@13.2.5 && ng serve --open --host 0.0.0.0 --port 4200 --disable-host-check"
+  #   links:
+  #     - backend-projeto-ecommerce
+  #   depends_on:
+  #     - backend-projeto-ecommerce
+  #   networks:
+  #     - devs2blu-network
 networks:
     devs2blu-network:
         driver: bridge
